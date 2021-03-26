@@ -18,3 +18,17 @@
 - Аутентификация с авторизацией - необязательно, по желанию
 - Брокер сообщений - любой. RabbitMQ будет плюсом
 - Тесты - будут плюсом
+
+### Endpoints
+
+#### Создание сообщения - POST
+/api/v1/messages/message/create/
+
+#### Посмотреть все сообщения - GET
+/api/v1/messages/all/
+
+#### Просмотр/удаление одного сообщения - GET/DELETE
+/api/v1/messages/message/detail/<id>/
+
+#### Отметить как прочитанное - PATCH
+/api/v1/messages/message/read/<id>/

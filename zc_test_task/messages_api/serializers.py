@@ -15,7 +15,7 @@ class MessageDetailSerializer(serializers.ModelSerializer):
         """
         instance = super().create(validated_data)
 
-        # Ставим задачу отметить как отправдено
+        # Ставим задачу отметить как отправлено
         sent_task.delay(instance.pk)
         return instance
 
