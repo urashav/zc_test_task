@@ -113,3 +113,6 @@ REST_FRAMEWORK = {
         'anon': '10/m',
     }
 }
+
+CELERY_BROKER_URL = 'pyamqp://guest@localhost//'
+
